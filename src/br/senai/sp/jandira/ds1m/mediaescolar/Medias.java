@@ -39,12 +39,12 @@ public class Medias {
     public void calcularMedia() {
         notaMedia = (nota1 + nota2 + nota3 + nota4) / 4;
 
-        if (notaMedia >= 6) {
+        if (notaMedia >= 5.0) {
             resultado = "Aprovado";
-
-
-        } else {
+        } else if(notaMedia < 4){
             resultado = "Reprovado";
+        } else {
+            resultado = "Recuperação";
         }
 
         exibirResultados();
