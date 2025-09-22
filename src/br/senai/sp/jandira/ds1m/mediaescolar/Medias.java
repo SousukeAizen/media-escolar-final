@@ -30,13 +30,13 @@ public class Medias {
         System.out.print("Insira a nota do 4°Bimestre: ");
         nota4 = leitor.nextDouble();
 
-    calculoMedia();
+    calcularMedia();
     }
 
 
 
 
-    public void calculoMedia() {
+    public void calcularMedia() {
         notaMedia = (nota1 + nota2 + nota3 + nota4) / 4;
 
         if (notaMedia >= 6) {
@@ -47,21 +47,21 @@ public class Medias {
             resultado = "Reprovado";
         }
 
-        obterResultados();
+        exibirResultados();
 
     }
 
-        public void obterResultados(){
+        public void exibirResultados(){
 
         System.out.println("-----------------");
         System.out.println("RESULTADO");
         System.out.println("-----------------");
-        System.out.println("Aluno " + aluno );
+        System.out.println("Aluno: " + aluno );
         System.out.println("Nota do 1° Bimestre: " + nota1);
         System.out.println("Nota do 2° Bimestre: " + nota2);
         System.out.println("Nota do 2° Bimestre: " + nota3);
         System.out.println("Nota do 4° Bimestre: " + nota4);
-        System.out.println("Nota Média " + notaMedia);
+        System.out.println("Nota Média: " + notaMedia);
         System.out.println("Decisão: " + resultado);
 
 
